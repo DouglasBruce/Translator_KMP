@@ -89,3 +89,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
+
+sqldelight {
+    databases {
+        create("TranslateDatabase") {
+            packageName.set("com.ragnarok.translator.database")
+        }
+    }
+}
