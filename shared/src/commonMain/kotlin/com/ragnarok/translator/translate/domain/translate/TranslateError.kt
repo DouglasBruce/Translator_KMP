@@ -7,6 +7,6 @@ enum class TranslateError {
     UNKNOWN_ERROR
 }
 
-class TranslateException(error: TranslateError): Exception(
-    message = "An error occurred when translating: $error"
+class TranslateException(error: TranslateError) : Exception(
+    "An error occurred when translating: $error"
 )
