@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 window.isNavigationBarContrastEnforced = false
             }
-            MyApplicationTheme {
+            TranslatorTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Surface(
                         modifier = Modifier
@@ -45,7 +45,7 @@ fun GreetingView(text: String) {
 @Preview
 @Composable
 fun DefaultPreview() {
-    MyApplicationTheme {
+    TranslatorTheme {
         GreetingView("Hello, Android!")
     }
 }
